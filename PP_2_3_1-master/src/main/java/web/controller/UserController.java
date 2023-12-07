@@ -35,7 +35,7 @@ public class UserController {
         return "editUser";
     }
 
-    @PostMapping(value = "/users/edit")
+    @PutMapping(value = "/users/edit")
     public String editSubmit(@ModelAttribute User user) {
         userService.editUser(user);
         return "redirect:/users";

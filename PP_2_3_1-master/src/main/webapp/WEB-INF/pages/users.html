@@ -28,9 +28,12 @@
         <td th:text="${user.email}"></td>
         <td >
           <a class="btn btn-primary" role="button" th:href="@{/users/edit(id=${user.getId()})}">rename</a>
-          -
 
-          <a class="btn btn-primary" role="button" th:href="@{/users/delete(id=${user.getId()})}" >delete</a>
+          <form action="#" th:action="@{/users/delete(id=${user.getId()})}" th:method="delete">
+
+<!--            <a class="btn btn-primary" role="button" th:href="@{}" >delete</a>-->
+            <input type="submit" value="delete"/>
+          </form>
         </td>
 
 
