@@ -28,7 +28,9 @@
         <td th:text="${user.email}"></td>
         <td >
           <a class="btn btn-primary" role="button" th:href="@{/users/edit(id=${user.getId()})}">rename</a>
-          <a class="btn btn-primary" role="button" th:href="@{/users/delete(id=${user.getId()})}">delete</a>
+          -
+
+          <a class="btn btn-primary" role="button" th:href="@{/users/delete(id=${user.getId()})}" >delete</a>
         </td>
 
 
